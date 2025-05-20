@@ -10,6 +10,7 @@ import Epreuves from "./components/Epreuves";
 import Formation from "./components/Formation";
 import Veille from "./components/Veille";
 import Contact from "./components/Contact";
+import TableauSynthese from "./components/TableauSynthese";
 
 const App: React.FC = () => {
 	console.log("Rendu du composant App");
@@ -32,6 +33,7 @@ const App: React.FC = () => {
 					<Epreuves />
 					<Formation />
 					<Veille />
+					<TableauSynthese />
 					<Contact />
 				</main>
 			</AnimatePresence>
