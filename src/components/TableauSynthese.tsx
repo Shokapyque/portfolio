@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Download } from "lucide-react";
 import tableauSynthese from "../doc/tableau de synthese.pdf";
 
 const TableauSynthese: React.FC = () => {
@@ -12,20 +11,9 @@ const TableauSynthese: React.FC = () => {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
 					className="max-w-6xl mx-auto">
-					<div className="flex justify-between items-center mb-8">
-						<h2 className="text-3xl md:text-4xl font-bold">
-							Tableau de Synthèse
-						</h2>
-						<motion.a
-							href={tableauSynthese}
-							download="tableau_de_synthese.pdf"
-							className="inline-flex items-center px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-							whileHover={{ scale: 1.05 }}
-							whileTap={{ scale: 0.95 }}>
-							<Download className="mr-2" size={20} />
-							Télécharger
-						</motion.a>
-					</div>
+					<h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+						Tableau de Synthèse
+					</h2>
 
 					<div className="bg-white rounded-xl shadow-lg p-6">
 						<iframe
