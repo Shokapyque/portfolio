@@ -28,6 +28,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
 		{ name: "Épreuves", href: "#epreuves" },
 		{ name: "Formation", href: "#formation" },
 		{ name: "Veille", href: "#veille" },
+		{ name: "Tableau de Synthèse", href: "#tableau-synthese" },
 		{ name: "Contact", href: "#contact" },
 	];
 

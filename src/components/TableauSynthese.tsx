@@ -11,20 +11,11 @@ const TableauSynthese: React.FC = () => {
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
-					className="max-w-4xl mx-auto">
-					<h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-						Tableau de Synthèse
-					</h2>
-
-					<div className="bg-white rounded-xl shadow-lg p-6 mb-8">
-						<iframe
-							src={tableauSynthese}
-							className="w-full h-[800px] rounded-lg"
-							title="Tableau de Synthèse"
-						/>
-					</div>
-
-					<div className="text-center">
+					className="max-w-6xl mx-auto">
+					<div className="flex justify-between items-center mb-8">
+						<h2 className="text-3xl md:text-4xl font-bold">
+							Tableau de Synthèse
+						</h2>
 						<motion.a
 							href={tableauSynthese}
 							download="tableau_de_synthese.pdf"
@@ -32,8 +23,16 @@ const TableauSynthese: React.FC = () => {
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}>
 							<Download className="mr-2" size={20} />
-							Télécharger le Tableau de Synthèse
+							Télécharger
 						</motion.a>
+					</div>
+
+					<div className="bg-white rounded-xl shadow-lg p-6">
+						<iframe
+							src={tableauSynthese}
+							className="w-full h-[calc(165vh)] rounded-lg"
+							title="Tableau de Synthèse"
+						/>
 					</div>
 				</motion.div>
 			</div>
