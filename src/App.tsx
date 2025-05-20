@@ -9,8 +9,8 @@ import Projects from "./components/Projects";
 import Epreuves from "./components/Epreuves";
 import Formation from "./components/Formation";
 import Veille from "./components/Veille";
-import Contact from "./components/Contact";
 import TableauSynthese from "./components/TableauSynthese";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
 	console.log("Rendu du composant App");
@@ -34,9 +34,9 @@ const App: React.FC = () => {
 					<Formation />
 					<Veille />
 					<TableauSynthese />
-					<Contact />
 				</main>
 			</AnimatePresence>
+			<Footer />
 		</div>
 	);
 };
